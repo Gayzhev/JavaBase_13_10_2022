@@ -9,3 +9,4 @@ public class HomeWork2 {
         System.out.println("coordinate of my home: " + x + z + ", " + y + z);
     }
 }
+//test
