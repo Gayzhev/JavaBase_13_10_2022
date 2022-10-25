@@ -23,8 +23,8 @@ public class Homework5 {
         int NumberLi = 860;
         double ratioQuantity = 1.50;
         int NumberMin = (int) (NumberLi * ratioQuantity);
-        int fullPowerLi = (VoinLi * LuchnikLi * VershnikLi) * NumberLi;
-        int fullPowerMin = (VoinMin * LuchnikMin * VershnikMin) * NumberMin;
+        int fullPowerLi = (VoinLi + LuchnikLi + VershnikLi) * NumberLi;
+        int fullPowerMin = (VoinMin + LuchnikMin + VershnikMin) * NumberMin;
         System.out.println(fullPowerMin);
         System.out.println(fullPowerLi);
     }
