@@ -26,11 +26,10 @@ public class HomeWork6 {
         int averagePowerMurDer = (latBam + chatFan + flyObj + boyTorn + goHome) / 2;
         if (averagePowerMurDer > averagePowerWarMade) {
             System.out.println("Winning team - " + team1 + ". Score: " + averagePowerWarMade + " frags");
-        }
-        else if (averagePowerMurDer < averagePowerWarMade) {
+        } else if (averagePowerMurDer < averagePowerWarMade) {
             System.out.println("Winning team - " + team2 + ". Score: " + averagePowerMurDer + " frags");
         } else {
-            System.out.println("Result - tie points. Score: " + ((int)(averagePowerMurDer+averagePowerWarMade)/2) + " frags");
+            System.out.println("Result - tie points. Score: " + ((int) (averagePowerMurDer + averagePowerWarMade) / 2) + " frags");
         }
     }
 }
