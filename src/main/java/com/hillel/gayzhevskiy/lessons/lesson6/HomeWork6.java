@@ -6,7 +6,6 @@ package com.hillel.gayzhevskiy.lessons.lesson6;
     підрахувати середнє арифметичне балів кожної команди
     порівняти результати команд та визначити переможця
     вивести у консоль:
-
 "Перемогла команда" + teamName + "набрала" + result + "очків" */
 
 public class HomeWork6 {
@@ -14,24 +13,24 @@ public class HomeWork6 {
         String team1 = "WarMade";
         int latHam = 4;
         int chatHam = 9;
-        int flyRad = 2;
+        int flyRad = 3;
         int boyRod = 3;
         int gomMes = 4;
         int averagePowerWarMade = (latHam + chatHam + flyRad + boyRod + gomMes) / 2;
         String team2 = "MurDer";
-        int latBam = 4;
-        int chatFan = 4;
+        int latBam = 3;
+        int chatFan = 1;
         int flyObj = 6;
-        int boyTorn = 4;
-        int goHome = 2;
+        int boyTorn = 1;
+        int goHome = 10;
         int averagePowerMurDer = (latBam + chatFan + flyObj + boyTorn + goHome) / 2;
         if (averagePowerMurDer > averagePowerWarMade) {
             System.out.println("Winning team - " + team1 + ". Score: " + averagePowerWarMade + " frags");
-            if (averagePowerMurDer < averagePowerWarMade) {
-                System.out.println("Winning team - " + team2 + ". Score: " + averagePowerMurDer + " frags");
-            }
+        }
+        else if (averagePowerMurDer < averagePowerWarMade) {
+            System.out.println("Winning team - " + team2 + ". Score: " + averagePowerMurDer + " frags");
         } else {
-            System.out.println("Result - tie points. Score: " + averagePowerMurDer + " frags");
+            System.out.println("Result - tie points. Score: " + ((int)(averagePowerMurDer+averagePowerWarMade)/2) + " frags");
         }
     }
 }
