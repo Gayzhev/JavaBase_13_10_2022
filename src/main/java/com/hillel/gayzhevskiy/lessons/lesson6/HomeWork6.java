@@ -11,25 +11,25 @@ package com.hillel.gayzhevskiy.lessons.lesson6;
 public class HomeWork6 {
     public static void main(String[] args) {
         String team1 = "WarMade";
-        int latHam = 4;
-        int chatHam = 9;
-        int flyRad = 3;
-        int boyRod = 3;
-        int gomMes = 4;
-        int averagePowerWarMade = (latHam + chatHam + flyRad + boyRod + gomMes) / 2;
+        int latHam = 5;
+        int chatHam = 8;
+        int flyRad = 2;
+        int boyRod = 5;
+        int gomMes = 2;
+        double averagePowerWarMade = (double) (latHam + chatHam + flyRad + boyRod + gomMes) / 5;
         String team2 = "MurDer";
-        int latBam = 3;
-        int chatFan = 1;
-        int flyObj = 6;
-        int boyTorn = 1;
-        int goHome = 10;
-        int averagePowerMurDer = (latBam + chatFan + flyObj + boyTorn + goHome) / 2;
-        if (averagePowerMurDer > averagePowerWarMade) {
+        int latBam = 6;
+        int chatFan = 2;
+        int flyObj = 7;
+        int boyTorn = 2;
+        int goHome = 2;
+        double averagePowerMurDer = (double) (latBam + chatFan + flyObj + boyTorn + goHome) / 5;
+        if (averagePowerMurDer < averagePowerWarMade) {
             System.out.println("Winning team - " + team1 + ". Score: " + averagePowerWarMade + " frags");
-        } else if (averagePowerMurDer < averagePowerWarMade) {
+        } else if (averagePowerMurDer > averagePowerWarMade) {
             System.out.println("Winning team - " + team2 + ". Score: " + averagePowerMurDer + " frags");
         } else {
-            System.out.println("Result - tie points. Score: " + ((int) (averagePowerMurDer + averagePowerWarMade) / 2) + " frags");
+            System.out.println("Result - tie points. Both average score: " + ((averagePowerMurDer + averagePowerWarMade) / 2) + " frags");
         }
     }
 }
