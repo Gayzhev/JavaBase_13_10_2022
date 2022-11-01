@@ -23,6 +23,8 @@ public class HomeWork6ver2 {
         int team9 = sc2.nextInt();
         int team10 = sc2.nextInt();
         double averagePowerSecondTeam = (double) (team6 + team7 + team8 + team9 + team10) / 5;
+        sc.close();
+        sc2.close();
         if (averagePowerFirstTeam > averagePowerSecondTeam) {
             System.out.println("Winning team - " + teamName1 + ". Score: " + averagePowerFirstTeam + " frags");
         } else if (averagePowerSecondTeam > averagePowerFirstTeam) {
