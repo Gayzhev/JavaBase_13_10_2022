@@ -4,41 +4,31 @@ package com.hillel.gayzhevskiy.lessons.lesson8;
 Користувач повинен мати можливість вгадувати в кілька спроб (мінімум 3). */
 
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class HomeWork8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int numberUgaday = 1;
-        int numberProg = (int) (Math.random() * 10);
+        int numberUgaday = 10;
+        int numberProg = (int) (Math.random() * numberUgaday);
         while (true) {
             System.out.println("Введите число от 1 до 10");
             if (scanner.hasNextInt()) {
                 numberUgaday = scanner.nextInt();
-                if (numberProg == numberUgaday) {
-                    System.out.println("Вы угадали");
+                if (numberUgaday > 10 || numberUgaday < 1) {
+                    System.out.println("Ваше число не входит в диапазон от 1 до 10");
                     break;
                 }
-
-            } else {
                 if (numberProg < numberUgaday) {
                     System.out.println("Моё число меньше.");
-                } else {
+                } else if (numberProg > numberUgaday) {
                     System.out.println("Моё число больше.");
+                } else {
+                    System.out.println("Вы угадали! Поздравляю!");
+                    break;
+
                 }
             }
-
-
-        } else{
-            System.out.println("Ваше число не входит в массив от 1 до 10");
-            scanner.next();
         }
     }
 }
-
-
-
-
-
-
