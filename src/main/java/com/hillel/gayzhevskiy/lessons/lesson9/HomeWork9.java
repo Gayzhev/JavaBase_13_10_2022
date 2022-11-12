@@ -1,13 +1,9 @@
 package com.hillel.gayzhevskiy.lessons.lesson9;
-
 import java.util.Arrays;
-import java.util.Scanner;
-
 /*Є дві команди регбі з 25 гравців різного віку у кожній.
 Вік беремо випадковим чином в діапазоні від 18 до 40.
 Виведіть у двох рядках вік гравців кожної команди.
 Порахуйте середній вік гравців кожної команди та виведіть на екран.*/
-
 
 public class HomeWork9 {
     public static void main(String[] args) {
@@ -29,13 +25,12 @@ public class HomeWork9 {
         for (int i = 0; i < arrayTeam1.length; i++) {
             totalAge1 += arrayTeam1[i];
         }
-        int averageAge1 = totalAge1 / arrayTeam1.length;
-        System.out.println("Average age of first  team is  " + averageAge1);
-
         int totalAge2 = 0;
         for (int i = 0; i < arrayTeam2.length; i++) {
             totalAge2 += arrayTeam2[i];
         }
+        int averageAge1 = totalAge1 / arrayTeam1.length;
+        System.out.println("Average age of first  team is  " + averageAge1);
         int averageAge2 = totalAge2 / arrayTeam1.length;
         System.out.println("Average age of second team is  " + averageAge2);
     }
