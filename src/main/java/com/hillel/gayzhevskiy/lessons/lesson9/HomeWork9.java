@@ -1,6 +1,7 @@
 package com.hillel.gayzhevskiy.lessons.lesson9;
 
 import java.util.Arrays;
+import java.util.Scanner;
 /*Є дві команди регбі з 25 гравців різного віку у кожній.
 Вік беремо випадковим чином в діапазоні від 18 до 40.
 Виведіть у двох рядках вік гравців кожної команди.
@@ -8,8 +9,17 @@ import java.util.Arrays;
 
 public class HomeWork9 {
     public static void main(String[] args) {
-        int[] arrayTeam1 = new int[25];
-        int[] arrayTeam2 = new int[25];
+        Scanner sc = new Scanner(System.in);
+        int size = 0;
+        System.out.println("Enter number of players for both teams: ");
+        if (sc.hasNextInt()) {
+            size = sc.nextInt();
+        } else {
+            System.out.println("Please enter an integer!");
+        }
+        sc.close();
+        int[] arrayTeam1 = new int[size];
+        int[] arrayTeam2 = new int[size];
         int maxAge = 40;
         int minAge = 18;
         int range = maxAge - minAge + 1;
