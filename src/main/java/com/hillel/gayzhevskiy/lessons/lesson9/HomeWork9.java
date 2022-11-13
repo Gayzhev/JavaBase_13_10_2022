@@ -1,4 +1,5 @@
 package com.hillel.gayzhevskiy.lessons.lesson9;
+
 import java.util.Arrays;
 /*Є дві команди регбі з 25 гравців різного віку у кожній.
 Вік беремо випадковим чином в діапазоні від 18 до 40.
