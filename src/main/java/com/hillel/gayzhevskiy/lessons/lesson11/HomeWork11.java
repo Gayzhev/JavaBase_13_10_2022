@@ -25,8 +25,8 @@ public class HomeWork11 {
         }
         sc.close();
         int[][] array = new int[n][];
-        int[][] transpArray = new int[m][];
-        for (int i = 0; i < transpArray.length; i++) transpArray[i] = new int[n];
+        int[][] transpArray = new int[n][];
+//        for (int i = 0; i < transpArray.length; i++) transpArray[i] = new int[m];
         System.out.println("Matrix: ");
         for (int i = 0; i < array.length; i++) {
             array[i] = new int[n];
@@ -47,6 +47,7 @@ public class HomeWork11 {
             for (int j = 0; j < transpArray[i].length; j++) {
                 System.out.println(transpArray[i][j] + "     ");
             }
+            System.out.println();
         }
     }
 }
