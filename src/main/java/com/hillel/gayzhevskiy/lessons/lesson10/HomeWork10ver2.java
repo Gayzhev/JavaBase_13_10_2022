@@ -49,10 +49,9 @@ public class HomeWork10ver2 {
         for (int i = 0; i <= chance1.length - 1; i++) {
             if (chance1[i] == chance2[i]) {
                 sovpalo++;
-                System.out.println("номер угаданной ячейки: " +i);
+                System.out.println("номер угаданной ячейки: " + i);
             }
         }
         System.out.println("Количество совпадений: " + sovpalo);
     }
 }
-
