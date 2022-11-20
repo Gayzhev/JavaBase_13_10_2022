@@ -26,8 +26,28 @@ public class HomeWork11 {
         sc.close();
         int[][] array = new int[n][];
         int[][] transpArray = new int[m][];
-
-
-
+        for (int i = 0; i < transpArray.length; i++) transpArray[i] = new int[n];
+        System.out.println("Matrix: ");
+        for (int i = 0; i < array.length; i++) {
+            array[i] = new int[n];
+            transpArray[i] = new int[m];
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = (int) (Math.random() * 101);
+                System.out.println(array[i][j] + "    ");
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                transpArray[i][j] = array[j][i];
+            }
+        }
+        System.out.println("Transposition: ");
+        for (int i = 0; i < transpArray.length; i++) {
+            for (int j = 0; j < transpArray[i].length; j++) {
+                System.out.println(transpArray[i][j] + "     ");
+            }
+        }
     }
 }
+
