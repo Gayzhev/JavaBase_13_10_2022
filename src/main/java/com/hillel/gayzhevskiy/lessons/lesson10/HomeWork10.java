@@ -13,30 +13,26 @@ first[3] повинен дорівнювати second[3], як показано нижче.
 
 public class HomeWork10 {
     public static void main(String[] args) {
+
         int[] chance1 = new int[7];
         int[] chance2 = new int[7];
         for (int i = 0; i < chance1.length; i++) {
             chance1[i] = (int) (Math.random() * 10);
         }
-            for (int i = 0; i < chance2.length; i++) {
-                chance2[i] = (int) (Math.random() * 10);
+        for (int i = 0; i < chance2.length; i++) {
+            chance2[i] = (int) (Math.random() * 10);
         }
-        System.out.println("Числа лотереи загаданные организатором " + Arrays.toString(chance1));
-        System.out.println("Числа лотереи угаданные участником     " + Arrays.toString(chance2));
         Arrays.sort(chance1);
         Arrays.sort(chance2);
-        System.out.println("Сортировка в порядке возрастания (организатор)" + Arrays.toString(chance1));
-        System.out.println("Сортировка в порядке возрастания (участник)   " + Arrays.toString(chance2));
+        System.out.println("Вариант организатора лотереи" + Arrays.toString(chance1));
+        System.out.println("Вариант участника лотереи   " + Arrays.toString(chance2));
 
-        System.out.println(Arrays.compare(chance1,chance2));
-
-
+        int sovpalo = 0;
+        for (int i = 0; i <= chance1.length - 1; i++) {
+            if (chance1[i] == chance2[i]) {
+                sovpalo++;
             }
         }
-
-
-
-
-
-
-
+        System.out.println("Количество совпадений: " + sovpalo);
+    }
+}
